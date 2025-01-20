@@ -30,12 +30,6 @@ h2  {
         padding: 1.5rem;
     }
 
-section
-    {
-
-
-    }
-
 input[type="text"]
     {
         color: purple ;
@@ -57,5 +51,4 @@ button
     { 
         color:#dfc5f0 ;
         background-color: purple;
-
     }
