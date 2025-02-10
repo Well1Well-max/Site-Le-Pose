@@ -8,31 +8,93 @@
         <link rel="stylesheet" href="style.css">
         <style>
             @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-            </style>    
+        </style>    
     </head>
     <body>
-        <header div class=hero-content> <!--Cabeçalho-->
-            <br><br><br><br><h1>Estudio Le pose</h1>
-            <p>Eternizando momentos atráves das nossas lentes</p>
+        <header> <!--Cabeçalho-->
+                <h1>Fran Lara</h1>
+                <h3>Fotografia</h3>
+                <p>Eternizando momentos atráves das nossas lentes</p>
+                <nav class="Menu">
+                <a href="Portifólio">Portifólio</a>
+                <a href="Nossa equipe">Nossa equipe</a>
+                <a href="Agende seu ensaio">Agende seu ensaio</a>
+                <a href="Contato">Contato</a>
+                </nav>
         </header>
+
         <main>
             <section> <!-- Portifólio-->
-                <h2>Portifólio</h2>
-                <p>Carrosel com alguns trabalhos</p>
-            </section>
-            <section> <!--Sobre nós-->
-                <h2>Sobre nós</h2>
-                <p>Fale sobre a história da Le pose</p>
-            </section>
+                <h2>Portifólios</h2>
+
+                <div class="slider">
+
+                    <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+
+                        <div class="slide first">
+                            <img src="assets/header img 2.jpg" alt="imagem 1">
+                        </div>
+
+                        <div class="slide">
+                            <img src="assets/img3.jpg" alt="imagem 2">
+                        </div>
+
+                        <div class="slide">
+                            <img src="assets/img 4.jpg" alt="imagem 3">
+                        </div>
+
+                        <div class="slide">
+                            <img src="assets/img 5.jpg" alt="imagem 4">
+                        </div>
+
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                    </div>
+
+                    <div class="manual-navigation">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                    </div>
+                </div>
+            </section> <!--fim da section Portifolio -->
+
+            <section class="conheca-nossa-equipe"> <!--Inicio Conheça nossa equipe-->
+                <div class="container">
+                        <div class="texto">
+                            <h2>Conheça nossa equipe</h2>
+                            <p>Olá, que bom você aqui.<br>
+                                Me chamo Franciellen, tenho 30 anos, casada e mãe da Luna, minha filha de quatro patas! 
+                                
+                                Sou apaixonada por tudo que envolve o mundo da fotografia. Minha jornada começou aos 17 anos, quando entrei em um estúdio fotográfico para trabalhar como editora de fotos. Aos 18, decidi me aprofundar ainda mais, iniciando um curso de fotografia, o que deu início a essa carreira maravilhosa que escolhi para minha vida.
+                                
+                                Durante 4 anos, pude explorar diversos estilos e modalidades, fotografando desde gestantes e casais até ensaios sensuais, newborns, e crianças. Com o tempo, o amor pela fotografia me levou a abraçar novos desafios, como aniversários infantis, eventos como casamentos, formaturas, 15 anos, e muito mais. Hoje, sou uma fotógrafa que adora explorar tudo que a vida oferece e capturar cada momento especial.
+                                
+                                Acredito que a fotografia é mais do que apenas clicar uma imagem, é contar histórias, é registrar emoções e memórias que se tornam eternas. É essa paixão que me move e que me inspira a sempre buscar o melhor em cada foto, para que você, que visita nossa página, sinta-se parte de cada momento capturado.
+                                
+                                Estou aqui para registrar os momentos mais especiais da sua vida com todo carinho e dedicação.
+                            </p>
+                        </div>
+                        <div class="imagem"> <img src="assets/img3.jpg" alt="img3"></div>
+                
+                </div>
+            
+            </section> <!--Fim conheça nossa equipe-->
+
             <section> <!--Feedbacks dos clientes em formato de prints-->
                 <h2>Feedback dos clientes</h2>
                 <p>[caixa de prints com comentários]</p>
             </section>
-            <section> <!--Conheça nossa equipe-->
-                <h2>Conheça nossa equipe</h2>
-                <p>Franciellen Lara [...]</p>
-                <p>Rafaela Cubis [...]</p>
-            </section>
+
             <section> <!--Agendamento-->
                 <h2>Agende seu ensaio</h2>
                     <form> 
@@ -57,16 +119,20 @@
                         <button onclick="alert('Enviado')">Solicitar</button>
                         </fieldset>
                     </form>
-            </section> 
+            </section>
+
             <section> <!--Link das Redes sociais-->
                 <h2>Nos siga nas redes sociais</h2>
                     <p><a href="">Instagram</a></p>
                     <p><a href="">Facebook</a></p>
                     <p><a href="">TikTok</a></p>
             </section>
+
         </main>
+
         <footer>
             <p>&copy; Todos direitos reservados</p>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
